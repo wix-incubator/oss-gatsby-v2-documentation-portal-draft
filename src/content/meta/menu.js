@@ -4,7 +4,7 @@ import TwitterIcon from 'react-feather/dist/icons/twitter';
 import GitIcon from 'react-feather/dist/icons/github';
 
 const menu = [
-    { label: '', to: '/', icon: HomeIcon }, 
+    { label: '', to: '/welcome', icon: HomeIcon }, 
     { label: '', to: '/content', icon: ListIcon },
     { label: '', to: 'github.com', icon: GitIcon },
     { label: '', to: 'twitter.com', icon: TwitterIcon }
