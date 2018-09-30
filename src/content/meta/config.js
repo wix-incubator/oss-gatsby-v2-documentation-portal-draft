@@ -1,6 +1,7 @@
 const base = {
-  name: 'Gatsby Starter Kit',
-  url: 'https://github.com/greglobinski/gatsby-starter-kit'
+  name: 'Gatsby Doc Portal',
+  url: 'https://wix-incubator.github.io/oss-gatsby-v2-documentation-portal-draft',
+  repoName: 'oss-gatsby-v2-documentation-portal-draft'
 };
 
 const social = {
@@ -25,6 +26,8 @@ const config = {
   /* url */
   siteUrl: base.url,
   // pathPrefix: '',
+
+  logoUrl:`${base.url}/logo.png`,
 
   /* social */
   gitUrl: `http://github.com/${social.github}`,
