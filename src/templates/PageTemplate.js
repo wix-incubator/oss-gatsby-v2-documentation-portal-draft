@@ -48,7 +48,6 @@ const PageTemplate = props => {
     siteUrl,
     siteLanguage,
     siteTitlePostfix,
-    logoUrl,
     gitUrl,
     twitterUrl,
   } = config;
@@ -60,7 +59,7 @@ const PageTemplate = props => {
     <React.Fragment>
       {layoutStyle && (
         <Sidebar
-          title=<a href="/"><img src={logoUrl} height="70pt"/></a>
+          title=<a href="/"><img src="/logo.png" height="70pt"/></a>
           pages={pages}
           categoryList={categoryList}
           pathname={slug}
