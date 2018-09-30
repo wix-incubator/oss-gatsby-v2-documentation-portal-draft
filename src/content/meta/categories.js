@@ -6,13 +6,10 @@ import HomeIcon from 'react-feather/dist/icons/home';
 
 export const categories = [
   { name: 'frontdoor', label: 'Welcome', icon: HomeIcon },
-  { name: 'general', label: 'Get started', icon: SettingsIcon },
-  { name: 'first', label: 'First issues', icon: GitBranchIcon },
-  { name: 'second', label: 'Second issues', icon: ImageIcon },
-  { name: 'last', label: 'Everything else', icon: FolderPlusIcon },
-  { name: 'gs', label: 'Discover', icon: ImageIcon },
-  { name: 'guides', label: 'Guides', icon: GitBranchIcon },
-  { name: 'specs', label: 'Specification overview', icon: FolderPlusIcon }
+  { name: 'general', label: 'Discover', icon: SettingsIcon },
+  { name: 'first_use', label: 'Use', icon: GitBranchIcon },
+  { name: 'api', label: 'Develop', icon: FolderPlusIcon },
+  { name: 'last', label: 'Other', icon: FolderPlusIcon }
 ];
 
 export default categories;

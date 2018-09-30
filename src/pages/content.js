@@ -48,7 +48,8 @@ const ContentPage = props => {
       <Header>
       <img src="/logo.png" />  
         {/*<Branding title={headerTitle} subTitle={headerSubTitle} />*/}
-        <Menu items={menuItems} /><a href={gitUrl}><GitIcon /></a><a href={twitterUrl}><TwitterIcon /></a>
+        <Menu items={menuItems} />
+        {/*<a href={gitUrl}><GitIcon /></a><a href={twitterUrl}><TwitterIcon /></a>*/}
       </Header>
       <Article>
         <Heading title="Table of content" />

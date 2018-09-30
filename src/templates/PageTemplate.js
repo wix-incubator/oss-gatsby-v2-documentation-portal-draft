@@ -68,7 +68,8 @@ const PageTemplate = props => {
       <Layout themeStyle={layoutStyle}>
         <Header>        
         {/*<Branding title={headerTitle} subTitle={headerSubTitle} />*/}
-          <Menu items={menuItems} /><a href={gitUrl}><GitIcon /></a>&nbsp;<a href={twitterUrl}><TwitterIcon /></a>
+          <Menu items={menuItems} />
+          {/*<a href={gitUrl}><GitIcon /></a>&nbsp;<a href={twitterUrl}><TwitterIcon /></a>*/}
         </Header>
         <Article>
           <Heading title={title} />
