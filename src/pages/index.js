@@ -5,16 +5,17 @@ import Img from 'gatsby-image';
 import '@react-website-themes/classy-docs/styles/variables';
 import '@react-website-themes/classy-docs/styles/global';
 
-import Branding from '@react-website-themes/classy-docs/components/Branding';
-import Footer from '@react-website-themes/classy-docs/components/Footer';
+/*import Branding from '@react-website-themes/classy-docs/components/Branding';
+import Footer from '@react-website-themes/classy-docs/components/Footer';*/
 import Header from '@react-website-themes/classy-docs/components/Header';
 import Hero from '@react-website-themes/classy-docs/components/Hero';
 import Layout from '@react-website-themes/classy-docs/components/Layout';
 import Menu from '@react-website-themes/classy-docs/components/Menu';
 import Seo from '@react-website-themes/classy-docs/components/Seo';
+/*
 import TwitterIcon from 'react-feather/dist/icons/twitter';
 import GitIcon from 'react-feather/dist/icons/github';
-
+*/
 
 import config from 'content/meta/config';
 import menuItems from 'content/meta/menu';
@@ -45,7 +46,7 @@ const IndexPage = props => {
   return (
     <Layout>
       <Header>
-       <img src="/logo.png" />
+      <a href="/"><img src="/logo.png" alt={`${headerTitle} -- ${headerSubTitle}`} height="70pt"/></a>
         {/*<Branding title={headerTitle} subTitle={headerSubTitle} />*/}
         <Menu items={menuItems} />
         {/*<a href={gitUrl}><GitIcon /></a>&nbsp;<a href={twitterUrl}><TwitterIcon /></a>*/}

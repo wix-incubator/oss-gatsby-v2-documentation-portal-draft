@@ -46,7 +46,7 @@ const ContentPage = props => {
   return (
     <Layout>
       <Header>
-      <img src="/logo.png" />  
+      <a href="/"><img src="/logo.png" alt={`${headerTitle} -- ${headerSubTitle}`} height="70pt"/></a>
         {/*<Branding title={headerTitle} subTitle={headerSubTitle} />*/}
         <Menu items={menuItems} />
         {/*<a href={gitUrl}><GitIcon /></a><a href={twitterUrl}><TwitterIcon /></a>*/}

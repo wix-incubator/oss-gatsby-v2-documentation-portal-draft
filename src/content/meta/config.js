@@ -28,7 +28,9 @@ const config = {
 
   /* social */
   gitUrl: `http://github.com/${social.github}`,
-  twitterUrl: `http://twitter.com/${social.twitter}`
+  twitterUrl: `http://twitter.com/${social.twitter}`,
+
+  pathPrefix: "/oss-gatsby-v2-documentation-portal-draft" // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
 };
 
 module.exports = config;

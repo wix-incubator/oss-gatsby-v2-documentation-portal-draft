@@ -7,9 +7,13 @@ import '@react-website-themes/classy-docs/styles/variables';
 import '@react-website-themes/classy-docs/styles/global';
 
 import Article from '@react-website-themes/classy-docs/components/Article';
-import Branding from '@react-website-themes/classy-docs/components/Branding';
+
+/*import Branding from '@react-website-themes/classy-docs/components/Branding';*/
+
 import Bodytext from '@react-website-themes/classy-docs/components/Bodytext';
-import Footer from '@react-website-themes/classy-docs/components/Footer';
+
+/*import Footer from '@react-website-themes/classy-docs/components/Footer';*/
+
 import Header from '@react-website-themes/classy-docs/components/Header';
 import Heading from '@react-website-themes/classy-docs/components/Heading';
 import Layout from '@react-website-themes/classy-docs/components/Layout';
@@ -19,8 +23,8 @@ import Sidebar from '@react-website-themes/classy-docs/components/Sidebar';
 import layoutSidebar from '@react-website-themes/classy-docs/styles/layoutSidebar';
 
 
-import GitIcon from 'react-feather/dist/icons/github';
-import TwitterIcon from 'react-feather/dist/icons/twitter';
+/*import GitIcon from 'react-feather/dist/icons/github';
+import TwitterIcon from 'react-feather/dist/icons/twitter';*/
 
 import config from 'content/meta/config';
 import menuItems from 'content/meta/menu';
@@ -59,7 +63,7 @@ const PageTemplate = props => {
     <React.Fragment>
       {layoutStyle && (
         <Sidebar
-          title=<a href="/"><img src="/logo.png" height="70pt"/></a>
+          title=<a href="/"><img src="/logo.png" alt={`${headerTitle} -- ${headerSubTitle}`} height="70pt"/></a>
           pages={pages}
           categoryList={categoryList}
           pathname={slug}

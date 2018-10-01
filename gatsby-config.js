@@ -1,7 +1,10 @@
 require('dotenv').config();
 const config = require('./src/content/meta/config');
 
+const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
+
 module.exports = {
+  pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
     siteUrl: config.siteUrl,
