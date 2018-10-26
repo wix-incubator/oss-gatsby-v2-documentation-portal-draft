@@ -10,7 +10,10 @@ import Footer from '@react-website-themes/classy-docs/components/Footer';*/
 import Header from '@react-website-themes/classy-docs/components/Header';
 import Hero from '@react-website-themes/classy-docs/components/Hero';
 import Layout from '@react-website-themes/classy-docs/components/Layout';
-import Menu from '@react-website-themes/classy-docs/components/Menu';
+
+/*import Menu from '@react-website-themes/classy-docs/components/Menu';*/
+import Menu from '../content/meta/externalLinksAwareMenu';
+
 import Seo from '@react-website-themes/classy-docs/components/Seo';
 /*
 import TwitterIcon from 'react-feather/dist/icons/twitter';
@@ -46,7 +49,7 @@ const IndexPage = props => {
   return (
     <Layout>
       <Header>
-      <a href="/"><img src="/logo.png" alt={`${headerTitle} -- ${headerSubTitle}`} height="70pt"/></a>
+      <a href="/"><img src="./logo.png" alt={`${headerTitle} -- ${headerSubTitle}`} height="70pt"/></a>
         {/*<Branding title={headerTitle} subTitle={headerSubTitle} />*/}
         <Menu items={menuItems} />
         {/*<a href={gitUrl}><GitIcon /></a>&nbsp;<a href={twitterUrl}><TwitterIcon /></a>*/}
@@ -70,7 +73,7 @@ export default IndexPage;
 
 export const query = graphql`
   query {
-    logo: file(relativePath: { regex: "/logo.png/" }) {
+    logo: file(relativePath: { regex: "./logo.png/" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG

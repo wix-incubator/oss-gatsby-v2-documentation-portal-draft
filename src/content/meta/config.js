@@ -1,6 +1,6 @@
 const base = {
-  name: 'Gatsby Starter Kit',
-  url: 'https://github.com/greglobinski/gatsby-starter-kit'
+  name: 'Adapted Gatsby Starter Kit',
+  url: 'https://github.com/wix-incubator/oss-gatsby-v2-documentation-portal-draft'
 };
 
 const social = {

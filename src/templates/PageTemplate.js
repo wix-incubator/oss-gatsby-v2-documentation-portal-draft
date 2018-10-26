@@ -17,11 +17,13 @@ import Bodytext from '@react-website-themes/classy-docs/components/Bodytext';
 import Header from '@react-website-themes/classy-docs/components/Header';
 import Heading from '@react-website-themes/classy-docs/components/Heading';
 import Layout from '@react-website-themes/classy-docs/components/Layout';
-import Menu from '@react-website-themes/classy-docs/components/Menu';
+/*import Menu from '@react-website-themes/classy-docs/components/Menu';*/
+import Menu from '../content/meta/externalLinksAwareMenu';
+
 import Seo from '@react-website-themes/classy-docs/components/Seo';
 import Sidebar from '@react-website-themes/classy-docs/components/Sidebar';
 import layoutSidebar from '@react-website-themes/classy-docs/styles/layoutSidebar';
-
+import { Link as GatsbyLink } from "gatsby";
 
 /*import GitIcon from 'react-feather/dist/icons/github';
 import TwitterIcon from 'react-feather/dist/icons/twitter';*/
@@ -29,6 +31,29 @@ import TwitterIcon from 'react-feather/dist/icons/twitter';*/
 import config from 'content/meta/config';
 import menuItems from 'content/meta/menu';
 import categoryList from 'content/meta/categories';
+
+export const Link = ({ children, to, ...other }) => {
+  // Tailor the following test to your environment.
+  // This example assumes that any internal link (intended for Gatsby)
+  // will start with exactly one slash, and that anything else is external.
+  const internal = /^\/(?!\/)/.test(to)
+
+  // Use Gatsby Link for internal links, and <a> for others
+  if (internal) {
+    return (
+      <GatsbyLink to={to} {...other}>
+        {children}
+      </GatsbyLink>
+    )
+  }
+  return (
+    <a href={to} {...other}>
+      {children}
+    </a>
+  )
+}
+
+
 
 const PageTemplate = props => {
   const {
@@ -63,7 +88,7 @@ const PageTemplate = props => {
     <React.Fragment>
       {layoutStyle && (
         <Sidebar
-          title=<a href="/"><img src="/logo.png" alt={`${headerTitle} -- ${headerSubTitle}`} height="70pt"/></a>
+          title=<a href="/"><img src="./logo.png" alt={`${headerTitle} -- ${headerSubTitle}`} height="70pt"/></a>
           pages={pages}
           categoryList={categoryList}
           pathname={slug}
